@@ -1,0 +1,13 @@
+.reception {
+    &__actions {
+        display: flex;
+        gap: rem(25);
+        margin-bottom: rem(20);
+    }
+
+    &__file-upload {
+    }
+
+    &__edit {
+    }
+}

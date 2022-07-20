@@ -1,0 +1,297 @@
+<div id="popup_add" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__text">
+				<form action="" class="popup-form">
+					<div class="popup-form__inputs grid-2">
+						<div class="popup-form__input-box">
+							<label for="article">Артикул</label>
+							<input id="article" type="text" name="add[article]" class="popup-form__input">
+						</div>
+						<div class="popup-form__input-box">
+							<label for="name">Наименование товара</label>
+							<input id="name" type="text" name="add[name]" class="popup-form__input">
+						</div>
+					</div>
+					<div class="popup-form__inputs grid-3">
+						<div data-units="ед" class="popup-form__input-box">
+							<label for="quantity">Количество товара</label>
+							<input id="quantity" type="text" name="add[quantity]" class="popup-form__input">
+						</div>
+						<div data-units="кг" class="popup-form__input-box">
+							<label for="weight">Масса всей позиции</label>
+							<input id="weight" type="text" name="add[weight]" class="popup-form__input">
+						</div>
+						<div data-units="мес" class="popup-form__input-box">
+							<label for="shelf">Срок годности</label>
+							<input id="shelf" type="text" name="add[shelf]" class="popup-form__input">
+						</div>
+					</div>
+					<div class="popup-form__inputs grid-1">
+						<div class="popup-form__input-box">
+							<label for="note">Примечание</label>
+							<textarea id="note" type="text" name="add[note]" class="popup-form__input"></textarea>
+						</div>
+					</div>
+					<button type="submit" class="popup-form__button common-button">Добавить позицию</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="popup_cell" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__text">
+				<div data-spollers class="popup__spollers spollers">
+					<div class="spollers__item">
+						<button type="button" data-spoller class="spollers__title">
+							<div class="spollers__name">
+								<span>Cameron Williamson</span>
+								<a href="">Смотреть профиль</a>
+							</div>
+							<div class="spollers__quantity-box quantity-box">
+								<div class="quantity-box__info">
+									<div class="quantity-box__number">50</div>
+									<div class="quantity-box__text">Товаров</div>
+								</div>
+							</div>
+						</button>
+						<div class="spollers__body">
+							<form action="" class="profile__table">
+								<table class="profile__table table">
+									<thead>
+										<tr>
+
+											<th>
+												<h3>Номер</h3>
+											</th>
+											<th>
+												<h3>Наименование товара</h3>
+											</th>
+											<th>
+												<h3>Дата приема</h3>
+											</th>
+											<th>
+												<h3>Кол-во товара</h3>
+											</th>
+											<th>
+												<h3>Профиль</h3>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<button type="submit" class="profile__button common-button">Сохранить</button>
+							</form>
+						</div>
+					</div>
+					<div class="spollers__item">
+						<button type="button" data-spoller class="spollers__title">
+							<div class="spollers__name">
+								<span>Cameron Williamson</span>
+								<a href="">Смотреть профиль</a>
+							</div>
+							<div class="spollers__quantity-box quantity-box">
+								<div class="quantity-box__info">
+									<div class="quantity-box__number">50</div>
+									<div class="quantity-box__text">Товаров</div>
+								</div>
+							</div>
+						</button>
+						<div class="spollers__body">
+							<form action="" class="profile__table">
+								<table class="profile__table table">
+									<thead>
+										<tr>
+
+											<th>
+												<h3>Номер</h3>
+											</th>
+											<th>
+												<h3>Наименование товара</h3>
+											</th>
+											<th>
+												<h3>Дата приема</h3>
+											</th>
+											<th>
+												<h3>Кол-во товара</h3>
+											</th>
+											<th>
+												<h3>Профиль</h3>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												1
+											</td>
+											<td>
+												<input type="text" class="input-can-change-value "
+													id="input-can-change-value_1"
+													placeholder="Мышь X-Game XM-770OUB [проводная, светодиодная, 1000 DPI, подсветка]">
+											</td>
+											<td>704.555.0127</td>
+
+											<td>100 шт</td>
+											<td>
+												<button class="table-button">Выписать товар</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<button type="submit" class="profile__button common-button">Сохранить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

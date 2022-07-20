@@ -1,0 +1,117 @@
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+// Блок со спойлерами
+.spollers {
+	display: grid;
+	gap: 15px;
+}
+// Спойлер
+.spollers__item {
+	font-size: rem(20);
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: rem(20);
+}
+// Заголовок спойлера
+.spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	border-radius: rem(5);
+	position: relative;
+	._spoller-init & {
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 50px;
+			top: 50%;
+			background-color: #000;
+			height: 2px;
+			width: 10px;
+			transition: transform 0.5s ease 0s;
+		}
+		&::before {
+			transform: translate(-75%, -50%) rotate(40deg);
+		}
+		&::after {
+			transform: translate(0, -50%) rotate(-40deg);
+		}
+		&._spoller-active {
+			&::before {
+				transform: translateX(-75%) rotate(-40deg);
+			}
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+	}
+}
+// Контент спойлера
+.spollers__body {
+	flex: 1 1 auto;
+}
+.spollers {
+	&__title {
+		font-family: "Gilroy";
+		flex: 0 0 75%;
+	}
+
+	&__name {
+		flex: 0 0 rem(180);
+		font-weight: 600;
+		font-size: rem(18);
+		line-height: math.div(22, 18);
+		color: #394547;
+		display: inline-flex;
+		flex-direction: column;
+		gap: rem(2);
+		a {
+			font-weight: 500;
+			font-size: rem(14);
+			line-height: math.div(17, 14);
+			text-decoration-line: underline;
+			color: #3a57e8;
+		}
+	}
+
+	&__quantity-box {
+		padding: rem(15) rem(10);
+		background-color: #f3f8fc;
+		border-radius: 10px;
+		width: 100%;
+	}
+}
+.quantity-box {
+	&__info {
+		display: flex;
+		align-items: center;
+		&::before {
+			content: "";
+			display: block;
+			height: rem(60);
+			flex: 0 0 rem(2);
+			background-color: #b8c7d3;
+		}
+	}
+
+	&__number {
+		font-weight: 600;
+		font-size: rem(30);
+		line-height: math.div(37, 30);
+		/* identical to box height */
+		margin-left: rem(12);
+		color: #394547;
+	}
+
+	&__text {
+		font-weight: 600;
+		font-size: rem(14);
+		line-height: math.div(17, 14);
+		margin-left: rem(20);
+		color: #94a8b9;
+	}
+}

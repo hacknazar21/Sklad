@@ -1,0 +1,28 @@
+.profile {
+    &__back {
+    }
+
+    &__info-box {
+        display: flex;
+        gap: rem(20);
+        & > div {
+            flex: 0 0 rem(308);
+        }
+
+        & > .card {
+            &__head {
+                &:not(:last-child) {
+                    margin-bottom: rem(15);
+                }
+            }
+
+            &__title {
+            }
+
+            &__subtitle {
+            }
+        }
+    }
+    &__table {
+    }
+}

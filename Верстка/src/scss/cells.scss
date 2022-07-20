@@ -1,0 +1,138 @@
+.cells {
+    &__table-box {
+        @include adaptiveValue("max-width", 1620, 0);
+    }
+    &__table {
+        display: block;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: blue orange;
+        &::-webkit-scrollbar {
+            height: 10px; /* height of horizontal scrollbar ← You're missing this */
+            border: 1px solid #d5d5d5;
+            left: -150px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #d1d1d1;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #3a57e8;
+            border-radius: 10px;
+        }
+        margin: 0 auto;
+        text-align: center;
+        th {
+            font-weight: 600;
+            font-size: rem(16);
+            line-height: math.div(20, 16);
+            color: #bcbcbc;
+            border: none;
+        }
+        td {
+            cursor: pointer;
+            span {
+                font-weight: 700;
+                font-size: rem(22);
+                line-height: math.div(27, 22);
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                color: #3a57e8;
+            }
+            border: 1px solid #e8edf5;
+            transition: background-color 0.3s ease 0s;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+            background-color: #f3f6f9;
+            height: rem(120);
+            padding: 0;
+            &:first-child {
+                flex-direction: column;
+                gap: rem(7);
+            }
+            &:not(:first-child) {
+                min-width: rem(130);
+            }
+        }
+    }
+}
+.table {
+    &__cell-item {
+        transition: transform 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: rotate(5deg);
+            }
+        }
+        background-color: #3a57e8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        height: calc(100% - 24px);
+        margin: rem(12) rem(10);
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            width: rem(1);
+            height: rem(70);
+            background-color: #fff;
+            position: absolute;
+            top: rem(10);
+            left: rem(10);
+        }
+    }
+}
+.cell-item {
+    &__box {
+        padding: rem(13.5) rem(10);
+        margin-left: rem(12);
+        color: #ffffff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__images {
+        display: flex;
+        align-items: center;
+        img {
+            width: rem(30);
+            height: rem(30);
+            border-radius: 50%;
+            border: 1.66667px solid #ffffff;
+            filter: drop-shadow(0px 3.33333px 3.33333px rgba(0, 0, 0, 0.1));
+            &:not(:last-child) {
+                margin-right: rem(-16);
+            }
+        }
+        span {
+            font-weight: 600 !important;
+            font-size: rem(14) !important;
+            line-height: math.div(17, 14) !important;
+            color: #ffffff !important;
+        }
+    }
+
+    &__text {
+        text-align: left;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(12);
+        line-height: math.div(10, 8);
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: rem(14);
+        line-height: math.div(17, 14);
+
+        color: #ffffff;
+    }
+}
